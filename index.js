@@ -5,6 +5,16 @@ const weatherConditions = ['sunny', 'rainy', 'cloudy', 'windy'];
 weatherConditions.forEach(condition => {
   let activity = '';
 
+    if (condition === 'sunny') {
+    activity = 'Go for a walk';
+  } else if (condition === 'rainy') {
+    activity = 'Bring an umbrella';
+  } else if (condition === 'cloudy') {
+    activity = 'Great day for  museumm visit';
+  } else if (condition === 'windy') {
+    activity = 'Great for flying kites';
+  }
+
   // Write your if-else statements here for specific suggestions
 
   console.log(`When it's ${condition}, you should ${activity}.`);
